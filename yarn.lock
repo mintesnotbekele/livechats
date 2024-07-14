@@ -7981,9 +7981,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"livechats@workspace:.":
+"livechatbot@workspace:.":
   version: 0.0.0-use.local
-  resolution: "livechats@workspace:."
+  resolution: "livechatbot@workspace:."
   dependencies:
     "@chromatic-com/storybook": "npm:^1.6.1"
     "@rollup/plugin-commonjs": "npm:^26.0.1"

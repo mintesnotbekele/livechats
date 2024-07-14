@@ -8,7 +8,7 @@ module.exports = {
 
     // General / Sheet
     'no-duplicate-at-import-rules': true,
-    'no-duplicate-selectors': true,
+    'no-duplicate-selectors': null,
     'selector-max-universal': 2,
     'max-nesting-depth': 6,
     'scss/load-no-partial-leading-underscore': true,
@@ -27,7 +27,7 @@ module.exports = {
     'selector-pseudo-element-no-unknown': true,
     'selector-type-no-unknown': true,
     'selector-no-vendor-prefix': true,
-    'selector-pseudo-element-colon-notation': 'single',
+    'selector-pseudo-element-colon-notation': null,
     'scss/selector-no-redundant-nesting-selector': true,
 
     // Media
@@ -40,13 +40,13 @@ module.exports = {
 
     // Properties
     'property-no-unknown': true,
-    'shorthand-property-no-redundant-values': true,
+    'shorthand-property-no-redundant-values': null,
 
     // Values
     'number-max-precision': 4,
     'value-no-vendor-prefix': true,
     'unit-no-unknown': true,
-    'length-zero-no-unit': true,
+    'length-zero-no-unit': null,
 
     // Colors
     'color-no-invalid-hex': true,

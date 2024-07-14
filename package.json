@@ -1,16 +1,16 @@
 {
-  "name": "livechats",
+  "name": "livechatbot",
   "version": "1.0.11",
   "description": "Ivy React Chatbot built for cross-platform integration",
   "author": "Mintesnot Bekele",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:mintesnotbekele/livechats.git"
+    "url": "git@github.com:mintesnotbekele/livechatbot.git"
   },
-  "homepage": "https://github.com/mintesnotbekele/livechats",
+  "homepage": "https://github.com/mintesnotbekele/livechatbot",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/<YourGitUserName>"
+    "registry": "https://npm.pkg.github.com/mintesnotbekele"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",

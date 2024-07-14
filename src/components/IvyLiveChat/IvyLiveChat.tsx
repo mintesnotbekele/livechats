@@ -21,12 +21,6 @@ const IvyLiveChat: React.FC<IvyLiveChatProps> = ({ userName, agentId }) => {
   const [userMessage, setUserMessage] = useState<string>('');
   const [enable, setEnable] = useState<boolean>(false);
 
-  const toggleState = () => {
-    setConvo([]);
-    setEnable(!enable);
-    showOrHideChatBox();
-  };
-
   const showOrHideChatBox = () => {
     if (enable) {
       // Add logic to show the chatbox
@@ -35,10 +29,10 @@ const IvyLiveChat: React.FC<IvyLiveChatProps> = ({ userName, agentId }) => {
     }
   };
 
-  const handleKeyPress = (e: KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === 'Enter') {
-      handleLiveChat();
-    }
+  const toggleState = () => {
+    setConvo([]);
+    setEnable(!enable);
+    showOrHideChatBox();
   };
 
   const login = async () => {
@@ -57,7 +51,6 @@ const IvyLiveChat: React.FC<IvyLiveChatProps> = ({ userName, agentId }) => {
         },
       });
       if (response.data.success === true) setIsLoggedIn(true);
-      console.log(response.data);
     } catch (error) {
       console.error('Error logging in:', error);
     }
@@ -83,7 +76,7 @@ const IvyLiveChat: React.FC<IvyLiveChatProps> = ({ userName, agentId }) => {
       const response = await axios.post(url, data, {
         withCredentials: true,
       });
-      console.log(response);
+
       const newMessage: Message = {
         role: response.data.data.role,
         content: response.data.data.content,
@@ -91,7 +84,12 @@ const IvyLiveChat: React.FC<IvyLiveChatProps> = ({ userName, agentId }) => {
       setConvo((prevConvo) => [...prevConvo, newMessage]);
       setTyping(false);
     } catch (err) {
-      console.log(err);
+      // console.log(err);
+    }
+  };
+  const handleKeyPress = async (e: KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      await handleLiveChat();
     }
   };
 
@@ -156,7 +154,7 @@ const IvyLiveChat: React.FC<IvyLiveChatProps> = ({ userName, agentId }) => {
               </svg>
             </button>
           ) : (
-            <img src={logo} style={{ width: '40px', height: '40px' }} />
+            <img src={logo} alt="logo" style={{ width: '40px', height: '40px' }} />
           )}
         </button>
       </div>

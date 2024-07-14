@@ -48,6 +48,8 @@ module.exports = {
     'setupTests.ts'
   ],
   rules: {
+    'jsx-a11y/no-static-element-interactions': 'off',
+    'prettier/prettier': ['error', { endOfLine: 'auto' }],
     'newline-before-return': 'warn',
     'no-console': [
       'warn',

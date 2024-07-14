@@ -1,7 +1,7 @@
 import React from 'react';
-import { Meta, Story } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 
-import IvyLiveChat, { IvyLiveChatProps } from './IvyLiveChat';
+import IvyLiveChat from './IvyLiveChat';
 
 export default {
   title: 'IvyLiveChat',
@@ -12,7 +12,7 @@ export default {
   },
 } as Meta;
 
-const Template: Meta<IvyLiveChatProps> = (args) => <IvyLiveChat {...args} />;
+const Template: StoryFn<typeof IvyLiveChat> = (args) => <IvyLiveChat {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
