@@ -1,8 +1,8 @@
 {
-  "name": "react-rollup-boilerplate",
+  "name": "livechats",
   "version": "5.0.0",
-  "description": "Boilerplate for writing React Libraries bundled with Rollup.js to commonJs and ES6 Modules and Storybookt",
-  "author": "Kai Hotz",
+  "description": "Ivy React Chatbot built for cross-platform integration",
+  "author": "Mintesnot Bekele",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -100,5 +100,8 @@
     "vite-plugin-svgr": "^4.2.0",
     "vitest": "^2.0.2"
   },
-  "packageManager": "yarn@4.3.1"
+  "packageManager": "yarn@4.3.1",
+  "dependencies": {
+    "axios": "^1.7.2"
+  }
 }
