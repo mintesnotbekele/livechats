@@ -1,14 +1,14 @@
 {
   "name": "livechats",
-  "version": "5.0.0",
+  "version": "1.0.11",
   "description": "Ivy React Chatbot built for cross-platform integration",
   "author": "Mintesnot Bekele",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:KaiHotz/react-rollup-boilerplate.git"
+    "url": "git@github.com:mintesnotbekele/livechats.git"
   },
-  "homepage": "https://github.com/KaiHotz/react-rollup-boilerplate",
+  "homepage": "https://github.com/mintesnotbekele/livechats",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/<YourGitUserName>"
   },

@@ -5,14 +5,14 @@ There are two methods for getting started with this repo.
 #### Familiar with Git?
 
 ```
-git clone git@github.com:KaiHotz/react-rollup-boilerplate.git
-cd react-rollup-boilerplate
+git clone git@github.com:mintesnotbekele/livechats.git
+cd livechats
 yarn install
 ```
 
 #### Not Familiar with Git?
 
-Click [here](https://github.com/KaiHotz/react-rollup-boilerplate/archive/master.zip) to download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
+Click [here](https://github.com/mintesnotbekele/livechats/archive/master.zip) to download the .zip file. Extract the contents of the zip file, then open your terminal, change to the project directory, and:
 
 ```
 yarn install
@@ -36,11 +36,11 @@ You can refer to example `Button` component, but I think you'll get the idea.
 ## Styling your components
 
 `SCSS` and `CSS` are supported out of the box, just import your styles into your component like you normally would do.
-For the use of  `CSS Modules` refer to [rollup-plugin-postcss](https://github.com/egoist/rollup-plugin-postcss)
+For the use of `CSS Modules` refer to [rollup-plugin-postcss](https://github.com/egoist/rollup-plugin-postcss)
 
 ## Linting and Code formating for Styles
-Linting `SCSS` and `CSS` is suported out of the box following BEM by using [stylelint](https://stylelint.io/)
 
+Linting `SCSS` and `CSS` is suported out of the box following BEM by using [stylelint](https://stylelint.io/)
 
 ## Linting and Code formating for Typescript
 
@@ -51,16 +51,18 @@ You can modify linting rules by overriding them in the `.eslintrc.cjs` file.
 ```
 yarn lint
 ```
+
 or (if automatic fixing is possible)
+
 ```
 yarn lint:fix
 ```
-
 
 ## Testing
 
 Testing is done with [Vitest](https://vitest.dev/) and [@testing-library/react](https://testing-library.com/docs/react-testing-library/intro/)
 You can refer to `Button.test.js` as an example.
+
 ```
 yarn test
 ```
@@ -108,20 +110,25 @@ yarn deploy
 ## Resources
 
 ### Bundler
+
 - [Rollup.js](https://rollupjs.org/guide/en)
 
 ### Code Formatter
+
 - [Prettier](https://prettier.io/)
 
 ### Storybook
+
 - [Storybook](https://storybook.js.org/)
 
 ### Testing
+
 - [Vitest](https://vitest.dev/)
 - [@testing-library/react](https://testing-library.com/docs/react-testing-library/intro/)
 - [@testing-library/jest-dom](https://github.com/testing-library/jest-dom)
 
 ### Linting
+
 - [ESLint](https://eslint.org/)
 - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)
 - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
@@ -129,4 +136,5 @@ yarn deploy
 - [stylelint-scss](https://github.com/kristerkari/stylelint-scss)
 
 ### Compiler
+
 - [Typescript](https://www.typescriptlang.org/)

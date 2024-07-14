@@ -22,6 +22,7 @@ const IvyLiveChat: React.FC<IvyLiveChatProps> = ({ userName, agentId }) => {
   const [enable, setEnable] = useState<boolean>(false);
 
   const toggleState = () => {
+    setConvo([]);
     setEnable(!enable);
     showOrHideChatBox();
   };

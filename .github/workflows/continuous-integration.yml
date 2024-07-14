@@ -1,4 +1,4 @@
-name: react-rollup-boilerplate
+name: livechats
 
 on:
   pull_request:
