@@ -12,7 +12,7 @@ export default {
   },
 } as Meta;
 
-const Template: Story<IvyLiveChatProps> = (args) => <IvyLiveChat {...args} />;
+const Template: Meta<IvyLiveChatProps> = (args) => <IvyLiveChat {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

@@ -4,7 +4,7 @@ import axios from 'axios';
 import './IvyLiveChat.scss';
 import Typing from '../Typing/Typing';
 import logo from './logo.png';
-interface IvyLiveChatProps {
+export interface IvyLiveChatProps {
   userName: string;
   agentId: string;
 }
@@ -88,7 +88,7 @@ const IvyLiveChat: React.FC<IvyLiveChatProps> = ({ userName, agentId }) => {
         role: response.data.data.role,
         content: response.data.data.content,
       };
-      setConvo((prevConvo) => [...prevConvo, newUserMessage, newMessage]);
+      setConvo((prevConvo) => [...prevConvo, newMessage]);
       setTyping(false);
     } catch (err) {
       console.log(err);
