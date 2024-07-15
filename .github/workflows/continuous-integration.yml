@@ -1,4 +1,4 @@
-name: livechatbot
+name: livechats
 
 on:
   pull_request:
